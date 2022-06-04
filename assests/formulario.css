@@ -17,6 +17,7 @@
 
 fieldset{
     border: 0;
+    width:378px;
 }
 
 body{
@@ -35,12 +36,21 @@ input, select, textarea, button{
 
 .campo{
     margin-bottom: 1em;
+    
 }
+
 
 .campo label{
     margin-bottom: 0.2em;
     color: #59429d;
     display: block;
+}
+.campo #fone { 
+    margin:2px 2px;
+    display: block;
+}
+.campo input[type="telefone"]{
+    display: flex;
 }
 
 fieldset.grupo .campo{
@@ -48,11 +58,12 @@ fieldset.grupo .campo{
     margin-right: 1em;
 }
 
-.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea , .campo input[type="telefone"]{
     padding: 0.2em;
     border: 1px solid #59429d;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
+    font-family: 'Franklin Gothic Medium';
 }
 
 .campo select option{
@@ -70,10 +81,10 @@ fieldset.grupo .campo{
     margin-bottom: 1em;
     color: #ffffff;
     padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
     position: absolute;
-    top: 90%;
+    top: 92%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -81,7 +92,7 @@ fieldset.grupo .campo{
 
 .botao:hover{
     background: plum;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);  
+    box-shadow: inset 2px 2px 4px rgba(0,0,0,0.2);  
     text-shadow: none;
 }
 
@@ -91,4 +102,24 @@ fieldset.grupo .campo{
 
 #senioridade{
     color: #59429d;
+}
+.git input[type="text"]{
+    width: 160px;
+    height:24px;  
+    border-radius: 120px;
+    box-shadow: 4px 4px 2px inset #E0E0F8;  
+    text-shadow: 4px 4px 4px solid #380B61;
+    display: block;
+}
+
+#github  {
+    padding: 0.5px;     
+    border-radius: 20px ;
+    border-style: solid 2px;
+    font-family: 'Franklin Gothic Medium';
+    display: block;
+}
+#github:focus{
+    
+    background-color: #E0E0F8;
 }
